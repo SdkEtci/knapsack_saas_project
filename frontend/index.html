@@ -90,7 +90,7 @@
     <script>
         async function fetchData() {
             try {
-                const response = await fetch('http://localhost:5000/api/knapsack-results');
+                const response = await fetch('/api/knapsack-results');
                 const data = await response.json();
                 return data;
             } catch (error) {
