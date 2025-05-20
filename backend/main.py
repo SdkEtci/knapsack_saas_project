@@ -6,7 +6,6 @@ import os
 
 app = Flask(__name__, static_folder='../frontend')
 CORS(app)
-CORS(app)
 
 def parse_array_string(s):
     # Remove brackets and split by whitespace
