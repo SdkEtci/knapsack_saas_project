@@ -1,10 +1,10 @@
-import pandas as pd
+..import pandas as pd
 import numpy as np
 from flask import Flask, jsonify, send_from_directory
 from flask_cors import CORS
 import os
 
-app = Flask(__name__, static_folder='frontend')
+app = Flask(__name__, static_folder='../frontend')
 CORS(app)
 
 def parse_array_string(s):
