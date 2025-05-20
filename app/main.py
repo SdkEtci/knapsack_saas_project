@@ -111,7 +111,7 @@ def get_knapsack_results():
     
 @app.route('/')
 def home():
-    return "Knapsack SaaS is running!"
+    return render_template('index.html')
     
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))
