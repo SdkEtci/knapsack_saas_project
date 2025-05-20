@@ -86,10 +86,6 @@ def greedy_by_efficiency(projects, max_budget, max_time):
         'budget_remaining': remaining_budget
     }
 
-@app.route('/')
-def serve_frontend():
-    return send_from_directory(app.static_folder, 'index.html')
-
 @app.route('/api/knapsack-results', methods=['GET'])
 def get_knapsack_results():
     # Define budget and time constraints
