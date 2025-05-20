@@ -114,8 +114,8 @@ def get_knapsack_results():
     return jsonify(response_data)
     
 @app.route('/')
-def serve_frontend():
-    return send_from_directory(app.static_folder, 'index.html')
+def home():
+    return send_from_directory('static', 'index.html')
     
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))
